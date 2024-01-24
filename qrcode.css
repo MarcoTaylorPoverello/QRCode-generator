@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./images/qrcode-bg.jpg);
+}
+
+.container {
+    width: 500px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    border: 5px solid white;
+    background: rgba(255, 255, 255, 0.54);
+    border-radius: 16px;
+    box-shadow: 5px 5px white, 15px 15px rgba(0, 131, 148, 0.61), -2px -2px rgba(39, 39, 39, 0.61);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+}
+
+.container h2 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.container h4 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.container input {
+    width: 100%;
+    height: 50px;
+    border: 3px solid rgba(0, 131, 148, 0.61);
+    outline: 0;
+    padding: 10px;
+    margin: 20px 0 40px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.container .generate-button {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 131, 148, 0.61);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(133, 133, 133, 0.5);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    color: white;
+    border: 3px solid white;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.container .download-button {
+    width: 100%;
+    height: 50px;
+    background: rgba(44, 136, 7, 0.842);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(133, 133, 133, 0.5);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    color: white;
+    border: 3px solid white;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#qrCodeBox {
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in;
+    
+}
+
+#qrCodeBox img{
+    border:1px solid #d1d1d1;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+#qrCodeBox.show-img {
+    max-height: 300px;
+    margin: 10px auto;
+}
