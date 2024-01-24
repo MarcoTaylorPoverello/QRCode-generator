@@ -4,7 +4,7 @@
 
 # Features
 
-- The application accepts `letters`, `numbers`, `email addresses`, 'special characters' and 'URLS' as criteria when generating your QR Code.
+- The application accepts `letters`, `numbers`, `email addresses`, `special characters` and `URLS` as criteria when generating your QR Code.
 - The application features a `generate button` and a `download button`, so that once you've created your QR Code, you're able to download it and share it.
 - The QR Codes are defaulted to save as `.png`.
 
