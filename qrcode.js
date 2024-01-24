@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         const blob = await response.blob();
         const downloadLink = document.createElement("a");
         downloadLink.href = URL.createObjectURL(blob);
-        downloadLink.download = "qrCode.jpg";
+        downloadLink.download = "qrCode.png";
         downloadLink.click();
     })
 
